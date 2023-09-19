@@ -1,4 +1,10 @@
 from solver import Solver
-
-solver = Solver(3, "A", "B", "C")
-solver.solver()
+print('Solver de Torre de Hanói ver 1.0 - IFMG 2023')
+print('Desenvolvido como trabalho prático para a disciplina de PAA')
+print('Autores: Daniel Antônio de Sá')
+numDiscos = input("Digite o numeros de discos: ")
+origem = input("Digite o nome da torre de origem: ")
+destino = input("Digite o nome da torre de destino: ")
+auxiliar = input("Digite o nome da torre auxiliar: ")
+solver = Solver(int(numDiscos), origem, auxiliar, destino)
+solver.solver(int(numDiscos), origem, destino, auxiliar)
